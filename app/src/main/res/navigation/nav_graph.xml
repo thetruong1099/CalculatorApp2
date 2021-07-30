@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatorFragment">
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.calculatorapp2.ui.fragment.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/conversionFragment"
+        android:name="com.example.calculatorapp2.ui.fragment.ConversionFragment"
+        android:label="fragment_conversion"
+        tools:layout="@layout/fragment_conversion" />
+</navigation>

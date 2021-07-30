@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonNumber">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_28sp</item>
+        <item name="android:onClick">numberAction</item>
+        <item name="android:paddingBottom">@dimen/_10dp</item>
+        <item name="android:paddingTop">@dimen/_10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="buttonOperator">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/carrot</item>
+        <item name="android:paddingBottom">@dimen/_10dp</item>
+        <item name="android:paddingTop">@dimen/_10dp</item>
+        <item name="android:textSize">@dimen/_28sp</item>
+    </style>
+
+    <style name="ButtonConvert">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_28sp</item>
+        <item name="android:textColor">@color/carrot</item>
+        <item name="android:paddingBottom">@dimen/_20dp</item>
+        <item name="android:paddingTop">@dimen/_20dp</item>
+    </style>
+
+    <style name="textConvert">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_28sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="textConvert2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_32sp</item>
+        <item name="android:textColor">@color/carrot</item>
+    </style>
+
+    <style name="textConvert3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

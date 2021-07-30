@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ConversionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        style="@style/textConvert"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:text="Cân nặng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        style="@style/textConvert2"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:background="@drawable/background_border_2"
+        android:hint="@string/_0"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/_10dp"
+        android:textColorHint="@color/carrot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textConvert3"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="Kilogam"
+        app:layout_constraintEnd_toEndOf="@+id/tv_weight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/textConvert"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:text="Chiều cao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        style="@style/textConvert2"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:background="@drawable/background_border_2"
+        android:hint="@string/_0"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/_10dp"
+        android:textColorHint="@color/carrot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/textConvert3"
+        android:layout_marginTop="8dp"
+        android:text="centimeter"
+        app:layout_constraintEnd_toEndOf="@+id/tv_height"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginBottom="@dimen/_50dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/_20dp"
+        app:cardElevation="@dimen/_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50dp"
+                android:layout_marginEnd="@dimen/_50dp"
+                android:layout_marginBottom="@dimen/_50dp"
+                android:text="20.8"
+                android:textColor="@color/carrot"
+                android:textSize="@dimen/_36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="8dp"
+                android:text="BMI"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/tv_result"
+                app:layout_constraintTop_toTopOf="@+id/tv_result" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="5dp"
+                android:text="binh thuong"
+                android:textColor="@color/emerald"
+                android:textSize="14sp"
+
+                app:layout_constraintStart_toEndOf="@+id/tv_result"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_7"
+                style="@style/buttonNumber"
+                android:text="@string/_7" />
+
+            <TextView
+                android:id="@+id/btn_8"
+                style="@style/buttonNumber"
+                android:text="@string/_8" />
+
+            <TextView
+                android:id="@+id/btn_9"
+                style="@style/buttonNumber"
+                android:text="@string/_9" />
+
+            <TextView
+                android:id="@+id/btn_ac"
+                style="@style/buttonOperator"
+                android:text="@string/ac" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_6"
+                style="@style/buttonNumber"
+                android:text="@string/_6" />
+
+            <TextView
+                android:id="@+id/btn_5"
+                style="@style/buttonNumber"
+                android:text="@string/_5" />
+
+            <TextView
+                android:id="@+id/btn_4"
+                style="@style/buttonNumber"
+                android:text="@string/_4" />
+
+            <TextView
+                android:id="@+id/btn_del"
+                style="@style/buttonOperator"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_3"
+                style="@style/buttonNumber"
+                android:text="@string/_3" />
+
+            <TextView
+                android:id="@+id/btn_2"
+                style="@style/buttonNumber"
+                android:text="@string/_2" />
+
+            <TextView
+                android:id="@+id/btn_1"
+                style="@style/buttonNumber"
+                android:text="@string/_1" />
+
+            <TextView
+                android:id="@+id/btn_go"
+                style="@style/buttonOperator"
+                android:text="@string/go" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/buttonNumber"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/btn_0"
+                style="@style/buttonNumber"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/btn_dec"
+                style="@style/buttonNumber"
+                android:text="@string/dec"
+                android:textColor="@color/carrot"
+                android:textSize="@dimen/_36sp" />
+
+            <TextView style="@style/buttonOperator" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
